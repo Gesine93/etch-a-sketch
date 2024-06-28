@@ -30,4 +30,10 @@ addEventListener("DOMContentLoaded", (event) => {
     let button = document.querySelector("button");
     createGrid(sizeGrid);
     button.addEventListener("click", selectSize);
+    let squares = document.querySelectorAll(".square");
+    squares.forEach(square => {
+        square.addEventListener("mouseover", () => {
+            square.style.backgroundColor = "red";
+        })
+    });
 });
