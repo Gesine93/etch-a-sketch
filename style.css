@@ -16,6 +16,7 @@ body {
 .square {
     border: 0.2px rgb(200, 200, 200) solid;
     background-color: white;
+    box-sizing: border-box;
 }
 
 #toggle {
