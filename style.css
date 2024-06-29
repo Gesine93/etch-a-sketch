@@ -4,7 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    gap: 10px;
+    gap: 20px;
 }
 
 #grid {
@@ -14,14 +14,25 @@ body {
 }
 
 .square {
-    border: 1px black solid;
+    border: 0.2px rgb(200, 200, 200) solid;
     background-color: white;
 }
 
 #toggle {
     display: flex;
-    padding-top: 10px;
+    padding-top: 20px;
     width: 100vw;
     justify-content: center;
     align-items: center;
 }
+
+button {
+    border-radius: 5px;
+    background-color: #486858;
+    color: white;
+    font-family: Arial;
+    font-size: 1rem;
+    font-weight: bold;
+}
+    
+    
