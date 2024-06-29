@@ -22,6 +22,7 @@ function createGrid(size) {
                 let color = `rgb(${red}, ${green}, ${blue})`;
                 square.style.backgroundColor = color;
                 square.style.opacity = 0.1;
+                square.style.border = "none";
             } else if (Number(square.style.opacity) < 1) {
                 square.style.opacity = 0.1 + Number(square.style.opacity);
             };
