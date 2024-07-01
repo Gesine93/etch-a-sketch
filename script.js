@@ -32,7 +32,7 @@ function createGrid(size) {
             let squareLocation = e.changedTouches[0];
             let squareTarget = document.elementFromPoint(squareLocation.clientX, squareLocation.clientY);
             if (squareTarget.classList.contains("square")) {
-              if (squareTarget.style.backgroundColor === "white" || square.style.backgroundColor === "") {
+              if (squareTarget.style.backgroundColor === "white" || squareTarget.style.backgroundColor === "") {
                   let red = Math.round(Math.random() * 255);
                   let green = Math.round(Math.random() * 255);
                   let blue = Math.round(Math.random() * 255);
