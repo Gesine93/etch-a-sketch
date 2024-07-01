@@ -32,16 +32,16 @@ function createGrid(size) {
             let squareLocation = e.changedTouches[0];
             let squareTarget = document.elementFromPoint(squareLocation.clientX, squareLocation.clientY);
             if (squareTarget.classList.contains("square")) {
-              if (square.style.backgroundColor === "white" || square.style.backgroundColor === "") {
+              if (squareTarget.style.backgroundColor === "white" || square.style.backgroundColor === "") {
                   let red = Math.round(Math.random() * 255);
                   let green = Math.round(Math.random() * 255);
                   let blue = Math.round(Math.random() * 255);
                   let color = `rgb(${red}, ${green}, ${blue})`;
-                  square.style.backgroundColor = color;
-                  square.style.opacity = 0.1;
-                  square.style.border = "none";
-              } else if (Number(square.style.opacity) < 1) {
-                  square.style.opacity = 0.1 + Number(square.style.opacity);
+                  squareTarget.style.backgroundColor = color;
+                  squareTarget.style.opacity = 0.1;
+                  squareTarget.style.border = "none";
+              } else if (Number(squareTarget.style.opacity) < 1) {
+                  squareTarget.style.opacity = 0.1 + Number(squareTarget.style.opacity);
               };
             }
         })
